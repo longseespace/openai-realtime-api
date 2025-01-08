@@ -2,7 +2,9 @@
   "root": true,
   "extends": ["@fisch0920/eslint-config/node"],
   "rules": {
-    "unicorn/consistent-function-scoping": "off"
+    "unicorn/consistent-function-scoping": "off",
+    "simple-import-sort/imports": "off",
+    "unicorn/new-for-builtins": "off"
   },
   "ignorePatterns": ["examples/openai-realtime-console"]
 }
