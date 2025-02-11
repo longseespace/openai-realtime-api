@@ -420,6 +420,10 @@ export class WebRTCClient extends RealtimeEventHandler<
           handler(event)
           break
 
+        case 'conversation.item.input_audio_transcription.completed':
+          handlerWithDispatch(event)
+          break
+
         case 'rate_limits.updated':
           // No need to process rate limits in conversation
           break
